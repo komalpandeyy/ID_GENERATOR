@@ -27,4 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
             handleCourseSelection(selectedCourse);
         });
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> fa4af022b9cbd6b436440670e73b8cf1ee7ce6e0

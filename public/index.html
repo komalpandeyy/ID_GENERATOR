@@ -37,11 +37,30 @@
         </div>
     </div>
     <script>
+<<<<<<< HEAD
         // Function to get query parameter from URL
         function getQueryParam(name) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(name);
         }
+=======
+       // Function to get query parameter from URL
+       function getQueryParam(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    // Function to fill the program input field based on the selected course
+    function fillProgramField() {
+        // Get the course parameter from the URL
+        const course = getQueryParam('course');
+        document.getElementById('program').value = course || '';
+    }
+
+    // Run the fillProgramField function when the window is fully loaded
+    window.onload = fillProgramField;
+    </script>
+>>>>>>> fa4af022b9cbd6b436440670e73b8cf1ee7ce6e0
     
         // Function to fill the program input field based on the selected course
         function fillProgramField() {

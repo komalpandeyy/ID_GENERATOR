@@ -75,7 +75,7 @@ app.post("/", async (req, res) => {
   try {
       const savedUser = await newUser.save();
       console.log("User saved successfully:", savedUser);
-      res.redirect('register_successful.html'); // Redirect after successful submission
+      res.redirect('https://komalpandeyy.github.io/ID_GENERATOR/public/register_successful.html'); // Redirect after successful submission
   } catch (err) {
       console.error("Error saving user:", err);
       res.status(500).send("Error saving user");

@@ -1,0 +1,136 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #355C7D; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.container .search-box {
+    position: relative;
+    height: 62px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.search-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #ffff;
+    padding: 0 15px 0 45px;
+    color: #C06C84;
+    border-radius: 6px;
+}
+
+.search-box i {
+    position: absolute;
+    z-index: 2;
+    color: #999;
+    top: 50%;
+    left: 15px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+.container .images .image-box {
+    position: relative;
+    height: 300px;
+    width: 210px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 8px solid #fff; /* Add border for 3D effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+.images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.images .image-box {
+    margin: 8px;
+}
+
+.images .image-box img {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.2s linear;
+    opacity: 0.9; /* Transparent image background */
+}
+
+.image-box:hover img {
+    transform: scale(1.05);
+}
+
+.image-box h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff; /* White text color */
+    font-family: 'Regular', sans-serif; /* Set font family */
+    font-weight: 400;
+    font-style: italic;
+}
+
+.image-box:hover {
+    text-shadow: 0 0 10px #C06C84,
+                 0 0 20px #C06C84,
+                 0 0 30px #C06C84,
+                 0 0 40px #C06C84,
+                 0 0 50px #C06C84,
+                 0 0 60px #C06C84,
+                 0 0 70px #C06C84,
+                 0 0 80px #C06C84; /* Add glow effect on hover */
+    animation: glow 1s ease-in-out infinite alternate; /* Apply glow animation on hover */
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba#C06C84,
+                     0 0 20px #C06C84,
+                     0 0 30px #C06C84,
+                     0 0 40px #C06C84,
+                     0 0 50px #C06C84,
+                     0 0 60px #C06C84,
+                     0 0 70px #C06C84,
+                     0 0 80px #C06C84;
+    }
+    to {
+        text-shadow: 0 0 20px #355C7D,
+                     0 0 30px #355C7D,
+                     0 0 40px #355C7D,
+                     0 0 50px #355C7D,
+                     0 0 60px #355C7D,
+                     0 0 70px #355C7D,
+                     0 0 80px #355C7D,
+                     0 0 90px #355C7D;
+    }
+}

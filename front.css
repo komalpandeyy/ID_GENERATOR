@@ -1,0 +1,65 @@
+body {
+  background-color: #fff; /* Set a default background color */
+  font-family: 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* Same gradient as cover.html */
+  opacity: 0.8;
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+.background-pattern {
+  position: fixed; /* Fixed position for background pattern */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./logo-white.png'); /* Use a smaller logo image */
+  background-repeat: repeat; /* Repeat the smaller logo */
+  opacity: 0.5; /* Adjust the opacity of the pattern */
+  pointer-events: none; /* Allow clicks to pass through the pattern */
+  z-index: 0; /* Ensure it's behind other content */
+}
+
+
+.form-box {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  border: 4px solid transparent;
+  border-radius: 53px;
+  transition: border-color 0.3s ease-in-out;
+  width: 80%;
+  max-width: 600px; /* Increase the size of the box */
+  padding: 40px; /* Add more padding */
+  z-index: 1; /* Ensure it's above the background pattern */
+}
+
+.form-box:hover {
+  border-color: #C06C84; /* Match hover color with gradient */
+}
+
+.invalid {
+  border-color: red !important;
+}
+
+.welcome {
+  border-color: green !important;
+  background-color: #4caf50 !important;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="front.css">
+    <link rel="shortcut icon" type="image/x-icon" href="college.png">
+</head>
+<body>
+    <div class="background-pattern"></div>
+    <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+        <!-- Apply the background styles to the body -->
+        <div class="background"></div>
+        <div class="form-box p-4 text-center">
+            <h1 class="mt-2 mb-4" style="font-family: 'Times New Roman', serif; font-size: 3rem;">Enter College ID</h1>
+            <input type="text" id="collegeID" class="form-control mb-3 px-4" style="font-family: 'Times New Roman', serif; font-size: 1.8rem; border-width: 4px; border-radius: 20px;" placeholder="Enter your ID">
+            <button onclick="checkID()" class="btn btn-primary btn-block rounded-pill py-2" id="submitButton" style="font-family: 'Times New Roman', serif; font-size: 1.8rem; border-radius: 20px;">SUBMIT & CONTINUE</button>
+        </div>
+    </div>
+    <script src="front.js"></script>
+</body>
+</html>

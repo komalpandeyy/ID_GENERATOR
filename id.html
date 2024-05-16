@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ID Card</title>
+  <link rel="stylesheet" href="id.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logo" class="logo" />
+    <div class="content">
+      <h1 style="color: green; font-weight: bold">
+        INDIRA GANDHI DELHI TECHNICAL
+      </h1>
+      <h1 style="color: green; font-weight: bold">UNIVERSITY FOR WOMEN</h1>
+      <p>(Established by Govt. of Delhi vide Act 9 of 2012)</p>
+      <p style="color: green">Kashmere Gate, Delhi-110006</p>
+      <hr />
+      
+      <div class="student-info">
+        <div class="photo-box">
+          <div class="image-preview" id="imagePreview">
+            <img src="placeholder.png" alt="Image Preview" />
+          </div>
+          <button
+            id="browseButton"
+            onclick="document.getElementById('photo').click()"
+          >
+            Browse
+          </button>
+          <input
+            type="file"
+            id="photo"
+            accept="image/*"
+            onchange="previewImage(event)"
+            style="display: none"
+          />
+        </div>
+        <div class="student-details">
+          <div class="info">
+            <div>
+              <label for="name">Name:</label> <input type="text" id="name" />
+            </div>
+            <div>
+              <label for="fatherName">Father's Name:</label>
+              <input type="text" id="fatherName" />
+            </div>
+            <div>
+              <label for="enrollmentNo">Enrollment No:</label>
+              <input type="text" id="enrollmentNo" />
+            </div>
+            <div>
+              <label for="program">Program:</label>
+              <input type="text" id="program" />
+            </div>
+            <div>
+              <label for="dob">DOB:</label> <input type="text" id="dob" />
+            </div>
+            <div>
+              <label for="validity">Validity:</label>
+              <input type="text" id="validity" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="sign-holder">(Sign of Holder)</div>
+      <div class="signature-authority">(Signature of Authority)</div>
+    </div>
+  </div>
+
+  <div class="backside">
+    <div class="back">
+      <div>
+        <label for="address"> Address:</label>
+        <input type="text" id="address" />
+      </div>
+      <div>
+        <label for="phone">Phone No.:</label>
+        <input type="text" id="phone" />
+      </div>
+      <div class="barcode">
+          <img id="barcodeImage" src="barcode.png" alt="Barcode" onclick="openImagePicker()">
+      </div>
+      <!-- Input field for barcode image -->
+      <input type="file" id="barcodeInput" accept="image/*" onchange="previewBarcode(event)" style="display: none;">
+  </div>
+      <div class="instructions">
+        <p>Instructions:</p>
+        <ol>
+          <li>This card is non-transferable.</li>
+          <li>Loss of this card should be reported immediately.</li>
+          <li>Duplicate card shall be issued on the payment of Rs.100/-.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <script src="id.js"></script>
+</body>
+</html>

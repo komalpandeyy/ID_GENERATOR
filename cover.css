@@ -1,0 +1,282 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Regular 400 Italic
+  ; /* Changing font style to Comic Sans MS */
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background: #355C7D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  /* background: linear-gradient(to right, #ec615a 50%, #87b387 50%); Half-half background color */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 10px; */
+  margin-top:15px ;
+  margin-bottom: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adding a little shadow */
+  position: fixed; /* Position navbar fixed at the top */
+  top: -30px; /* Aligning navbar to top */
+  width: 100%;
+  background-color: white; /* Changing navbar background color to white */
+  z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.logo{
+  margin-left: 10px;
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu li {
+  margin-right: 20px;
+  font-size: 20px;
+}
+.menu li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black; /* Changing menu item color to black */
+  transition: color 0.3s, background-color 0.3s; /* Add transition effect */
+  cursor: pointer; /* Change cursor to pointer */
+}
+.menu li:nth-child(odd) a {
+  color: #C06C84; /* Changing color to pastel green */
+}
+.menu li:nth-child(even) a {
+  color:  #6C5B7B; /* Changing color to peach */
+}
+.menu li a:hover {
+  color: #355C7D; /* Change color on hover */
+  background-color: lightgrey; /* Change background color on hover */
+}
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  color: black; /* Changing logo color to black */
+  margin-left: -1030px;
+}
+.logo span:nth-child(odd) {
+  color:#C06C84; /* Peach color */
+}
+.logo span:nth-child(even) {
+  color:  #6C5B7B; /* Pastel green color */
+}
+.content {
+  width: 300px; /* Decrease size of the cube */
+  height: 300px; /* Decrease size of the cube */
+  perspective: 1000px; /* Define the perspective for 3D */
+  position: relative;
+  margin-top: 60px; /* Adjust margin top to make space for the navbar */
+}
+.cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotateCube 10s linear infinite; /* Rotate the cube */
+}
+.side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  backface-visibility: hidden;
+}
+.front {
+  transform: translateZ(150px);
+}
+.back {
+  transform: translateZ(-150px) rotateY(180deg);
+}
+.left {
+  transform: rotateY(-90deg) translateX(-150px);
+}
+.right {
+  transform: rotateY(90deg) translateX(150px);
+}
+.top {
+  transform: rotateX(90deg) translateY(-150px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateY(150px);
+}
+.i-card {
+  width: 100%;
+  height: 100%;
+}
+.text-overlay {
+  margin-left: -600px;
+  margin-top: -120px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+}
+.text-overlay h1, .text-overlay h2, .text-overlay h3, .text-overlay h4 {
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 70px;
+  animation: changeTextColor 8s linear infinite; /* Add color change animation */
+}
+
+.arrowBox {
+  font-size: 30px;
+  margin-left: 1070px;
+  position: relative;
+  width: 340px;
+  background: white;
+  height: 90px;
+  line-height: 40px;
+  margin-top: -400px;
+  text-align: center;
+  color: #6C5B7B ;
+  box-shadow: 0 0 20px 0px white; /* Add box-shadow for glow effect */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px 0px white /* Initial shadow */
+  }
+  50% {
+    box-shadow: 0 0 40px 20px white; /* Glowing effect */
+  }
+  100% {
+    box-shadow: 0 0 20px 0px white; /* Back to initial shadow */
+  }
+}
+
+.arrowBox:hover {
+  animation: glow 1.5s ease-in-out infinite; /* Apply glow animation on hover */
+}
+
+
+a{
+  color:#fff;
+  text-decoration: none;
+}
+
+.arrow-right:after{
+  content: "";
+  position: absolute;
+  right: -19px;
+  top: 0;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-left: 20px solid white; 
+}
+
+
+@keyframes rotateCube {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes changeTextColor {
+  0%, 100% {
+    color: white;
+  }
+  10% {
+    color: black;
+  }
+  20% {
+    color: white;
+  }
+  30% {
+    color: black;
+  }
+  40% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+  60% {
+    color: white;
+  }
+  70% {
+    color: black;
+  }
+  80% {
+    color: white;
+  }
+  90% {
+    color: black;
+  }
+}
+
+.logo-pic {
+  width: 100px; /* Increase the width of the logo-pic */
+  height: 100px; /* Increase the height of the logo-pic */
+  margin-right: 0px; /* Set the margin-right to 2px */
+  border-radius: 50%; /* Make the logo-pic round */
+}
+
+@media (max-width: 768px) {
+  .menu li {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+}
+/* Existing CSS styles remain unchanged */
+
+/* New styles for the pattern */
+.pattern {
+  position: absolute;
+  top: 150px; /* Adjust to position below the navbar and content */
+  right: 0;
+  bottom: 100px; /* Adjust to leave space for the arrowBox */
+  width: 50%; /* Take 50% of the screen width */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Divide into 5 equal columns */
+  grid-template-rows: repeat(4, 1fr); /* Divide into 4 equal rows */
+  gap: 5px; /* Adjust the gap between grid items */
+  z-index: 1; /* Ensure the pattern is behind other content */
+  opacity: 0.8; /* Adjust the opacity to make it look like a watermark */
+}
+
+.pattern-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Adjust z-index of other elements to ensure proper layering */
+.navbar {
+  z-index: 2; /* Ensure navbar is above the pattern */
+}
+
+.arrowBox {
+  z-index: 3; /* Ensure arrowBox is above the pattern */
+}
+
+.content {
+  z-index: 4; /* Ensure content is above the pattern */
+}
+
+/* Existing CSS styles remain unchanged */

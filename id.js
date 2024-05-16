@@ -2,7 +2,7 @@
 
   window.onload = function () {
     
-    const labels = document.querySelectorAll('.student-info .info label');
+    const labels = document.querySelectorAll('.student-info .info label ');
 
     labels.forEach(label => {
         const input = label.nextElementSibling;
@@ -17,7 +17,7 @@
     const father_name = urlParams.get("father_name");
     const program = urlParams.get("program");
     const dob = urlParams.get("dob");
-    const validity = urlParams.get("validity");
+    // const validity = urlParams.get("validity");
     const address = urlParams.get("address");
     const phone_no = urlParams.get("phone_no");
 
@@ -43,7 +43,7 @@ console.log(name+enrollment_no+father_name);
    }
 
     if (validity) {
-      document.getElementById("validity").value = validity;
+       document.getElementById("validity").value = calculateValidity(program,enrollment_no);
     }
 
     if (address) {
@@ -61,7 +61,6 @@ function calculateValidity(program, eno) {
     // Assuming the last 4 digits of enrollment number represent the year
     const year = eno.slice(-4);
     let validityDate = "31-05-" + year;
-  
     switch (program.toUpperCase()) {
       case "MCA":
       case "MTECH":
@@ -75,13 +74,13 @@ function calculateValidity(program, eno) {
         break;
       case "PHD":
         // For PhD, add 5 years to validity
-        validityDate = addYearsToDate(validityDate, 5);
+         validityDate = addYearsToDate(validityDate, 5);
         break;
       default:
         // Default validity date
         break;
     }
-  
+    
     return validityDate;
   }
   
@@ -107,7 +106,7 @@ function calculateValidity(program, eno) {
         reInsertButton.onclick = function() {
             document.getElementById('browseButton').style.display = 'block';
             document.getElementById('photo').style.display = 'block';
-            preview.innerHTML = '<img src="placeholder.png" alt="Image Preview">';
+            // preview.innerHTML = '<img src="placeholder.png" alt="Image Preview">';
         };
         preview.appendChild(reInsertButton);
 

@@ -8,19 +8,19 @@ async function getUserData() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const users = await response.json();
-        console.log("Users:", users); // Log the users array
+        // alert("Users:", users); // Log the users array
         if (users && users.length > 0) {
             const user = users[0]; // Get the first user object from the array
             // Redirect to id.html page with user data as URL parameters
             const urlParams = new URLSearchParams({
                 name: user.name,
-                enrollment_no: user.enrollment_no,
-                father_name: user.father_name,
+                enrollment_no: user.eno,
+                father_name: user.fname,
                 program: user.program,
                 dob: user.dob,
-                validity: user.validity,
+                // validity: user.validity,
                 address: user.address,
-                phone_no: user.phone_no
+                phone_no: user.phone,
             });
             window.location.href = "id.html?" + urlParams.toString();
         } else {

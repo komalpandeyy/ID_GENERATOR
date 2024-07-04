@@ -9,10 +9,9 @@ The MuKo College ID Generator project aims to revolutionize the traditional ID c
 
 ![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/20a2eb92-dbb8-40d4-b6fc-3edc4261ebd3)
 
-![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/f7fd5778-4f10-4fb9-8103-6f4c14838053)
-
-
 ![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/9bff2c3a-a7b3-4979-81f3-a21ae9938c42)
+
+![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/f7fd5778-4f10-4fb9-8103-6f4c14838053)
 
 ![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/0722dd79-59e0-4594-a6b3-77e644881b99)
 
@@ -22,6 +21,7 @@ The MuKo College ID Generator project aims to revolutionize the traditional ID c
 
 ![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/28031c19-a389-4d95-a77d-a74c1441c81c)
 
+![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/ad50ac58-a3f0-40d9-9f72-b35bd1bb1217)
 
 
 

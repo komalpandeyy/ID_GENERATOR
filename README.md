@@ -3,6 +3,27 @@
 ## Description
 The MuKo College ID Generator project aims to revolutionize the traditional ID card issuance process in colleges by harnessing digital platforms and modern technologies. The project automates data entry and verification to streamline and expedite the ID issuance process, minimizing delays and errors. This user-friendly application ensures prompt delivery, accuracy in ID card information, and enhances the overall experience for students and administrative staff.
 
+##Screenshots
+
+![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/221af3b4-68b5-4f22-94dd-28e36724add5)
+
+![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/20a2eb92-dbb8-40d4-b6fc-3edc4261ebd3)
+
+![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/9bff2c3a-a7b3-4979-81f3-a21ae9938c42)
+
+![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/0722dd79-59e0-4594-a6b3-77e644881b99)
+
+![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/2af452ad-00df-42f1-b07a-31678896e724)
+
+![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/d493443c-eb65-43fc-8daa-ee3a02e5beff)
+
+![image](https://github.com/komalpandeyy/ID_GENERATOR/assets/83563937/28031c19-a389-4d95-a77d-a74c1441c81c)
+
+
+
+
+
+
 ## Tech Stack
 - **Frontend:**
   - HTML

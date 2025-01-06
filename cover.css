@@ -3,6 +3,7 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: Regular 400 Italic
+  width:80%
   ; /* Changing font style to Comic Sans MS */
 }
 .container {

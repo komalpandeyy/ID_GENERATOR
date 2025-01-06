@@ -3,7 +3,7 @@
 async function getUserData() {
     const rollNo = document.getElementById("EnrollmentID").value.trim();
     try {
-        const response = await fetch(`http://localhost:3000/api/users/${rollNo}`);
+        const response = await fetch(`https://id-generator-2ing.onrender.com/api/users/${rollNo}`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
